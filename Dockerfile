@@ -1,3 +1,3 @@
-FROM centos
-RUN yum -y install httpd
+FROM ubuntu
+RUN apt-upadte && apt -y install httpd
 CMD ["httpd","-DFOREGROUND"]
