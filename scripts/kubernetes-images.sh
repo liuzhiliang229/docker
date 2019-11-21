@@ -16,7 +16,7 @@ From_Ali(){
 	       )
     k8s_images=(
     		k8s.gcr.io/pause:3.1
-    		k8s.gcr.io/etcd:3.3.15
+    		k8s.gcr.io/etcd:3.3.15-0
     		k8s.gcr.io/coredns:1.6.2
     		k8s.gcr.io/kube-controller-manager:v1.16.3
     		k8s.gcr.io/kube-scheduler:v1.16.3
@@ -40,7 +40,7 @@ From_Ali(){
         docker tag $registry_url:kube-apiserver-v1.16.3 k8s.gcr.io/kube-apiserver:v1.16.3
         docker tag $registry_url:kube-controller-manager-v1.16.3 k8s.gcr.io/kube-controller-manager:v1.16.3
         docker tag $registry_url:coredns-1.6.2 k8s.gcr.io/coredns:1.6.2
-        docker tag $registry_url:etcd-3.3.15 k8s.gcr.io/etcd:3.3.15
+        docker tag $registry_url:etcd-3.3.15 k8s.gcr.io/etcd:3.3.15-0
         docker tag $registry_url:pause-3.1 k8s.gcr.io/pause:3.1
         docker tag $registry_url:kube-proxy-v1.16.3 k8s.gcr.io/kube-proxy:v1.16.3
         docker tag $registry_url:kube-scheduler-v1.16.3 k8s.gcr.io/kube-scheduler:v1.16.3
@@ -56,7 +56,7 @@ From_Ali(){
 From_Class(){
     image_list=(
     10.30.5.120/docker/k8s.gcr.io/pause:3.1
-    10.30.5.120/docker/k8s.gcr.io/etcd:3.3.15
+    10.30.5.120/docker/k8s.gcr.io/etcd:3.3.15-0
     10.30.5.120/docker/k8s.gcr.io/coredns:1.6.2
     10.30.5.120/docker/k8s.gcr.io/kube-controller-manager:v1.16.3
     10.30.5.120/docker/k8s.gcr.io/kube-scheduler:v1.16.3
