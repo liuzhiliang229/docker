@@ -63,8 +63,7 @@ From_Class(){
     10.30.5.120/docker/k8s.gcr.io/kube-proxy:v1.16.3
     10.30.5.120/docker/k8s.gcr.io/kube-apiserver:v1.16.3
     )
-    echo -e "\033[1;34mkubernetes Version 1.16.3\033[0m"
-    echo -e "\033[1;32mBegining______________________\033[0m"
+    echo -e "\033[1;32mBeginin______________________\033[0m"
     for i in ${image_list[*]}
     do
         echo -e "\033[1;32m_________________________\033[0m"
@@ -74,8 +73,11 @@ From_Class(){
         then
             echo -e "\033[1;31m Pull Faild!Please Check daemon.json!"
             exit
+<<<<<<< HEAD
 	else
 	    echo -e "\033[1;32m____OK____\033[0m"
+=======
+>>>>>>> parent of a5f06b1... Update kubernetes-images.sh
         fi
         
         docker tag $i $(echo "$i" | awk -F '/' '{print $3"/"$4}')
