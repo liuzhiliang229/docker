@@ -75,7 +75,7 @@ From_Class(){
             echo -e "\033[1;31m Pull Faild!Please Check daemon.json!"
             exit
 	else
-	    echo -e "\033[1;32mOK~\033[0m"
+	    echo -e "\033[1;32m____OK____\033[0m"
         fi
         
         docker tag $i $(echo "$i" | awk -F '/' '{print $3"/"$4}')
