@@ -73,11 +73,8 @@ From_Class(){
         then
             echo -e "\033[1;31m Pull Faild!Please Check daemon.json!"
             exit
-<<<<<<< HEAD
-	else
-	    echo -e "\033[1;32m____OK____\033[0m"
-=======
->>>>>>> parent of a5f06b1... Update kubernetes-images.sh
+	    else
+	        echo -e "\033[1;32m____OK____\033[0m"
         fi
         
         docker tag $i $(echo "$i" | awk -F '/' '{print $3"/"$4}')
