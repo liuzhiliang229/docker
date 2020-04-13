@@ -3,25 +3,25 @@
 #DATE: 2019/11/20
 #M.Liu
 From_Ali(){
-    echo -e "\033[1;34mkubernetes Version 1.16.3\033[0m"
+    echo -e "\033[1;34mkubernetes Version 1.17.4\033[0m"
     registry_url="registry.cn-beijing.aliyuncs.com/lad/lzl"
     ali_images=(
-	  	kube-apiserver-v1.16.3
-	  	kube-controller-manager-v1.16.3
+	  	kube-apiserver-v1.17.4
+	  	kube-controller-manager-v1.17.4
 	  	coredns-1.6.2
 	  	etcd-3.3.15
 	  	pause-3.1
-	  	kube-proxy-v1.16.3
-	  	kube-scheduler-v1.16.3
+	  	kube-proxy-v1.17.4
+	  	kube-scheduler-v1.17.4
 	       )
     k8s_images=(
     		k8s.gcr.io/pause:3.1
     		k8s.gcr.io/etcd:3.3.15-0
     		k8s.gcr.io/coredns:1.6.2
-    		k8s.gcr.io/kube-controller-manager:v1.16.3
-    		k8s.gcr.io/kube-scheduler:v1.16.3
-    		k8s.gcr.io/kube-proxy:v1.16.3
-    		k8s.gcr.io/kube-apiserver:v1.16.3
+    		k8s.gcr.io/kube-controller-manager:v1.17.4
+    		k8s.gcr.io/kube-scheduler:v1.17.4
+    		k8s.gcr.io/kube-proxy:v1.17.4
+    		k8s.gcr.io/kube-apiserver:v1.17.4
                )
 
     for i in ${ali_images[*]}
@@ -37,13 +37,13 @@ From_Ali(){
     done
         echo -e "\033[1;32m_________________________\033[0m"
         echo -e "\033[1;32mAdd Tag\033[0m"
-        docker tag $registry_url:kube-apiserver-v1.16.3 k8s.gcr.io/kube-apiserver:v1.16.3
-        docker tag $registry_url:kube-controller-manager-v1.16.3 k8s.gcr.io/kube-controller-manager:v1.16.3
+        docker tag $registry_url:kube-apiserver-v1.17.4 k8s.gcr.io/kube-apiserver:v1.16.3
+        docker tag $registry_url:kube-controller-manager-v1.17.4 k8s.gcr.io/kube-controller-manager:v1.16.3
         docker tag $registry_url:coredns-1.6.2 k8s.gcr.io/coredns:1.6.2
         docker tag $registry_url:etcd-3.3.15 k8s.gcr.io/etcd:3.3.15-0
         docker tag $registry_url:pause-3.1 k8s.gcr.io/pause:3.1
-        docker tag $registry_url:kube-proxy-v1.16.3 k8s.gcr.io/kube-proxy:v1.16.3
-        docker tag $registry_url:kube-scheduler-v1.16.3 k8s.gcr.io/kube-scheduler:v1.16.3
+        docker tag $registry_url:kube-proxy-v1.17.4 k8s.gcr.io/kube-proxy:v1.16.3
+        docker tag $registry_url:kube-scheduler-v1.17.4 k8s.gcr.io/kube-scheduler:v1.16.3
         
         echo -e "\033[1;32m_________________________\033[0m"
         echo -e "\033[1;32mRemove Old Tag\033[0m"
@@ -58,10 +58,10 @@ From_Class(){
     10.30.5.120/docker/k8s.gcr.io/pause:3.1
     10.30.5.120/docker/k8s.gcr.io/etcd:3.3.15-0
     10.30.5.120/docker/k8s.gcr.io/coredns:1.6.2
-    10.30.5.120/docker/k8s.gcr.io/kube-controller-manager:v1.16.3
-    10.30.5.120/docker/k8s.gcr.io/kube-scheduler:v1.16.3
-    10.30.5.120/docker/k8s.gcr.io/kube-proxy:v1.16.3
-    10.30.5.120/docker/k8s.gcr.io/kube-apiserver:v1.16.3
+    10.30.5.120/docker/k8s.gcr.io/kube-controller-manager:v1.17.4
+    10.30.5.120/docker/k8s.gcr.io/kube-scheduler:v1.17.4
+    10.30.5.120/docker/k8s.gcr.io/kube-proxy:v1.17.4
+    10.30.5.120/docker/k8s.gcr.io/kube-apiserver:v1.17.4
     )
     echo -e "\033[1;32mBeginin______________________\033[0m"
     for i in ${image_list[*]}
