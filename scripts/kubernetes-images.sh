@@ -37,13 +37,13 @@ From_Ali(){
     done
         echo -e "\033[1;32m_________________________\033[0m"
         echo -e "\033[1;32mAdd Tag\033[0m"
-        docker tag $registry_url:kube-apiserver-v1.17.4 k8s.gcr.io/kube-apiserver:v1.16.3
-        docker tag $registry_url:kube-controller-manager-v1.17.4 k8s.gcr.io/kube-controller-manager:v1.16.3
+        docker tag $registry_url:kube-apiserver-v1.17.4 k8s.gcr.io/kube-apiserver:v1.17.4
+        docker tag $registry_url:kube-controller-manager-v1.17.4 k8s.gcr.io/kube-controller-manager:v1.17.4
         docker tag $registry_url:coredns-1.6.2 k8s.gcr.io/coredns:1.6.2
         docker tag $registry_url:etcd-3.3.15 k8s.gcr.io/etcd:3.3.15-0
         docker tag $registry_url:pause-3.1 k8s.gcr.io/pause:3.1
-        docker tag $registry_url:kube-proxy-v1.17.4 k8s.gcr.io/kube-proxy:v1.16.3
-        docker tag $registry_url:kube-scheduler-v1.17.4 k8s.gcr.io/kube-scheduler:v1.16.3
+        docker tag $registry_url:kube-proxy-v1.17.4 k8s.gcr.io/kube-proxy:v1.17.4
+        docker tag $registry_url:kube-scheduler-v1.17.4 k8s.gcr.io/kube-scheduler:v1.17.4
         
         echo -e "\033[1;32m_________________________\033[0m"
         echo -e "\033[1;32mRemove Old Tag\033[0m"
