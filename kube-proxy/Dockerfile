@@ -1,2 +1,2 @@
-FROM k8s.gcr.io/kube-proxy:v1.17.4
+FROM k8s.gcr.io/kube-proxy:v1.21.2
 MAINTAINER M.Liu <774693167@qq.com>
